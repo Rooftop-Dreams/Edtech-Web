@@ -5,7 +5,6 @@ import hulubooksuser from 'assets/hulubooksuser.png';
 import Button from 'components/Button';
 import ButtonGroup from 'components/ButtonGroup';
 import Container from 'components/Container';
-// import HeroIllustration from 'components/HeroIllustation';
 import OverTitle from 'components/OverTitle';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
@@ -33,7 +32,6 @@ export default function Hero() {
         </CustomButtonGroup>
       </Contents>
       <ImageContainer>
-        {/* <HeroIllustration /> */}
         <Image className='w-full h-full'  alt='hulubooks user' src={hulubooksuser} width={900} height={900}/>
       </ImageContainer>
     </HeroWrapper>
