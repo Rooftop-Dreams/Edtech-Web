@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  hulubooks:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hulubooks
+    restart: always
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./:/app
