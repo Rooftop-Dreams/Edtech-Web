@@ -10,26 +10,26 @@ import { media } from 'utils/media';
 
 const TABS = [
   {
-    title: 'Find relevant media contacts - multiline title',
+    title: 'Integrated and instefull Dashboard',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-3.png',
+      '<p>By making data driven decision it is so much easier to asses the current leaing exeriance and managing the Daytoday learnign.</p>',
+    imageUrl: '/hulubooksdashboard.png',
     baseColor: '249,82,120',
     secondColor: '221,9,57',
   },
   {
-    title: 'Another amazing feature',
+    title: 'An amazing feature chat with pdf',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-4.png',
+      '<p>Summarizing and chating on the context of the book with our <strong>LLM model</strong> is an amizing learing exeriance that decreases the time it needs learn  about some thing.</p>',
+    imageUrl: '/MobileAppFeature2.png',
     baseColor: '57,148,224',
     secondColor: '99,172,232',
   },
   {
-    title: 'And yet... another truly fascinating feature',
+    title: 'And yet... easy user experiance',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-5.png',
+      '<p>Our mobile app have user centric approach and we have a desined it to be as easy as it can be, to make it beautifuly desined , easily accessabel and offline first approach to make our users Satisfed.</p>',
+    imageUrl: '/MobileAppFeature3.png',
     baseColor: '88,193,132',
     secondColor: '124,207,158',
   },
@@ -77,7 +77,7 @@ export default function FeaturesGallery() {
     <FeaturesGalleryWrapper>
       <Content>
         <OverTitle>features</OverTitle>
-        <SectionTitle>What are you signing in for?</SectionTitle>
+        <SectionTitle>What are you Getting in for?</SectionTitle>
       </Content>
       <GalleryWrapper>
         <TabsContainer>{tabsMarkup}</TabsContainer>

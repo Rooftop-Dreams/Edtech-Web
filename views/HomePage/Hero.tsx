@@ -5,12 +5,13 @@ import hulubooksuser from 'assets/hulubooksuser.png';
 import Button from 'components/Button';
 import ButtonGroup from 'components/ButtonGroup';
 import Container from 'components/Container';
+// import VideoPlayer from 'components/HeroVideo'
 import OverTitle from 'components/OverTitle';
-import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
+// import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
 
 export default function Hero() {
-  const { setIsModalOpened } = useNewsletterModalContext();
+  // const { setIsModalOpened } = useNewsletterModalContext();
 
   return (
     <HeroWrapper>
@@ -21,18 +22,19 @@ export default function Hero() {
         Hulubook is a there for high school student that provide reference books, math equation solver, exams, chatgpt, and AI mentor.
         </Description>
         <CustomButtonGroup>
-          <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
+        <NextLink href="#apps" passHref>
+          <Button 
+          // onClick={() => setIsModalOpened(true)} 
+          >
+            Get Started <span>&rarr;</span>
           </Button>
-          <NextLink href="#whitepaper" passHref>
-            <Button transparent>
-              Features <span>&rarr;</span>
-            </Button>
-          </NextLink>
+        </NextLink>
+          
         </CustomButtonGroup>
       </Contents>
       <ImageContainer>
         <Image className='w-full h-full'  alt='hulubooks user' src={hulubooksuser} width={900} height={900}/>
+         {/* <VideoPlayer />  */}
       </ImageContainer>
     </HeroWrapper>
   );

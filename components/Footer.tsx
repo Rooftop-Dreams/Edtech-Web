@@ -21,13 +21,12 @@ const footerItems: FooterItems = [
     title: 'Product',
     items: [
       { title: 'Features', href: '/features' },
-      { title: 'Something', href: '/something' },
-      { title: 'Something else', href: '/something-else' },
-      { title: 'And something else', href: '/and-something-else' },
+      { title: 'B2B', href: '/b2b' },
+      { title: 'B2C', href: '/something-else' },
     ],
   },
   {
-    title: 'Knowledge',
+    title: 'Knowledge base',
     items: [
       { title: 'Blog', href: '/blog' },
       { title: 'Contact', href: '/contact' },
@@ -57,19 +56,19 @@ export default function Footer() {
         </ListContainer>
         <BottomBar>
           <ShareBar>
-            <NextLink href="https://www.twitter.com/my-saas-startup" passHref>
+            <NextLink href="https://www.twitter.com/hulubooks" passHref>
               <a>
                 <TwitterIcon size={50} round={true} />
               </a>
             </NextLink>
 
-            <NextLink href="https://www.facebook.com/my-saas-startup" passHref>
+            <NextLink href="https://www.facebook.com/hulubooks" passHref>
               <a>
                 <FacebookIcon size={50} round={true} />
               </a>
             </NextLink>
 
-            <NextLink href="https://www.linkedin.com/my-saas-startup" passHref>
+            <NextLink href="https://www.linkedin.com/company/hulubooks/" passHref>
               <a>
                 <LinkedinIcon size={50} round={true} />
               </a>

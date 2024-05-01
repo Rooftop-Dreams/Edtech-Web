@@ -1,8 +1,10 @@
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
+import Logo from 'assets/hulubookslogo.png';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { ScrollPositionEffectProps, useScrollPosition } from 'hooks/useScrollPosition';
 import { NavItems, SingleNavItem } from 'types';
@@ -11,7 +13,8 @@ import Button from './Button';
 import Container from './Container';
 import Drawer from './Drawer';
 import { HamburgerIcon } from './HamburgerIcon';
-import Logo from './Logo';
+// import Logo from './Logo';
+
 
 const ColorSwitcher = dynamic(() => import('../components/ColorSwitcher'), { ssr: false });
 
@@ -69,7 +72,10 @@ export default function Navbar({ items }: NavbarProps) {
       <Content>
         <NextLink href="/" passHref>
           <LogoWrapper>
-            <Logo />
+            {/* <Logo /> */}
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Image  alt='hulu books logo' src={Logo} width={"40px"} height={"40px"}/>  <strong style={{  marginLeft: '8px', fontFamily: 'Arial, sans-serif', fontSize: '2rem' , fontWeight:'bold' }}> Hulu books</strong>
+            </div>
           </LogoWrapper>
         </NextLink>
         <NavItemList>
