@@ -27,24 +27,22 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         <WhiteBackgroundContainer>
           <Hero />
           <Partners />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Lorem ipsum dolor sit amet consectetur." overTitle="sit amet gogo">
+          <BasicSection imageUrl="/demo-illustration-1.svg" title="Digital Learing Envaironment" overTitle="Affordable Books">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore
-              voluptate quo deleniti animi laboriosam.{' '}
-              <Link href="/help-center">Possimus ullam velit rem itaque consectetur, in distinctio?</Link> Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Soluta repellendus quia quos obcaecati nihil. Laudantium non accusantium, voluptate eum nesciunt
-              at suscipit quis est soluta?
+             Access to affordable books is never been easier. With Hulubooks you can upgrade the learing process to next level.Hulubooks is a toolkit that got everything to learn and appreciate practical leaing that enhance the learing process.{' '}
             </p>
           </BasicSection>
-          <BasicSection imageUrl="/demo-illustration-2.svg" title="Lorem ipsum dolor sit." overTitle="lorem ipsum" reversed>
+          <BasicSection imageUrl="/demo-illustration-2.svg" title="Easy payment with chapa payment gatway." overTitle="lorem ipsum" reversed>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore{' '}
-              <strong>voluptate quo deleniti animi laboriosam</strong>. Possimus ullam velit rem itaque consectetur, in distinctio?
+             With list of feature make your lealring exeriance to a better place.Using Hulu books payment to updated books worh the money spend{' '}
+              <strong>Chapa pay makes the payment essy</strong>. You can get a list of featus asside the books to enhannce the learing experiance.
             </p>
             <ul>
-              <li>Professional point 1</li>
-              <li>Professional remark 2</li>
-              <li>Professional feature 3</li>
+              <li>Latest Reference Books </li>
+              <li>Math Equation solver</li>
+              <li>Ai Explainer & chat with AI</li>
+              <li>Chat with your PDF</li>
+              <li>Dashboard</li>
             </ul>
           </BasicSection>
         </WhiteBackgroundContainer>
