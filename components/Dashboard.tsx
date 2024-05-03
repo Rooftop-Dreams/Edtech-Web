@@ -4,7 +4,12 @@ import { Link, useLocation, useParams } from "react-router-dom";
 import { sidebarRoutes } from "../utils/constants";
 import avatarlogo from "/log1.svg";
 
-const Dashboard = ({ children }) => {
+interface DashboardProps {
+    children: React.ReactNode;
+  }
+  
+  const Dashboard: React.FC<DashboardProps> = ({ children }) => {
+  
   return (
     <div className="flex h-screen">
       <div className="flex flex-col w-64 bg-gray-800">
@@ -39,9 +44,15 @@ const Dashboard = ({ children }) => {
     </div>
   );
 };
-
-const NavLink = ({ to, activeClassName, exact, children }) => {
-
+interface NavLinkProps {
+    to: string;
+    activeClassName?: string;
+    exact?: boolean;
+    children: React.ReactNode;
+  }
+  
+  const NavLink: React.FC<NavLinkProps> = ({ to, activeClassName, exact, children }) => {
+  
   const match = useLocation().pathname.split("dashboard/")[1] == to;
 
   return (
