@@ -29,7 +29,7 @@ export default function BasicSection({ imageUrl, title, overTitle, reversed, chi
 }
 
 const Title = styled.h1`
-  font-size: 5.2rem;
+  font-size: 3.2rem;
   font-weight: bold;
   line-height: 1.1;
   margin-bottom: 4rem;
