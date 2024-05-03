@@ -17,9 +17,9 @@ const FEATURES = [
   },
   {
     imageUrl: '/grid-icons/ai-mentor.svg',
-    title: 'Ai Mentor.',
+    title: 'User friendly Ai Mentor.',
     description:
-      'Ai Mentor, a student can ask any question related to his problem can be mentored by Ai and get explanation.',
+      'A chatbot integrated in to the pdf reader assists students by answering questions while they are reading.',
   },
   {
     imageUrl: '/grid-icons/math-solver.svg',
@@ -29,21 +29,21 @@ const FEATURES = [
   },
   {
     imageUrl: '/grid-icons/llm.svg',
-    title: 'LLM QA.',
+    title: 'ChatGpt and AI book summarizer.',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'An AI chatbot that have user friendly chat appearance to chat with you on specific tipics and books you want to discus',
   },
   {
     imageUrl: '/grid-icons/givesupport.svg',
-    title: 'Assignment Organizer.',
+    title: 'FastAssignment Organizer.',
     description:
-      'Easily prepare assignment documents and get ai help',
+      'Provides prefered answers related to your assingment questions and prepares a full document that can be submited to your teacher',
   },
   {
     imageUrl: '/grid-icons/dashboard.svg',
-    title: 'Comprehancive Dashboarod.',
+    title: 'Performance Tracker.',
     description:
-      'Comprehancive dashboard that ',
+      'Measures day-to-day accomplishments on your reading jorney , analizes and summarizes your performance graphically.',
   }
 ];
 

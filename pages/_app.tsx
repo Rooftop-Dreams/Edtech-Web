@@ -18,12 +18,17 @@ import NewsletterModal from 'components/NewsletterModal';
 import WaveCta from 'components/WaveCta';
 import { NewsletterModalContextProvider, useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { NavItems } from 'types';
+import '../styles/globals.css';
 
 const navItems: NavItems = [
-  { title: 'Home', href: '/features' },
-  { title: 'Blogs', href: '/blogs' },
+  { title: 'Home', href: '/' },
+  { title: 'Product', href: '/product' },
+  { title: 'Blogs', href: '/blog' },
+  { title: 'About', href: '/about' },
   { title: 'Contact', href: '/contact' },
-  { title: 'Sign up', href: '/sign-up', outlined: true },
+
+
+  // { title: 'Sign up', href: '/sign-up', outlined: true },
 ];
 
 const TinaCMS = dynamic(() => import('tinacms'), { ssr: false });
@@ -68,7 +73,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         >
           <Component {...pageProps} />
         </TinaEditProvider>
-        <WaveCta />
+        {/* <WaveCta /> */}
         <Footer />
       </Providers>
     </>

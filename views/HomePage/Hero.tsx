@@ -17,9 +17,9 @@ export default function Hero() {
     <HeroWrapper>
       <Contents>
         <CustomOverTitle>the coolest, educational tool you have ever experiance</CustomOverTitle>
-        <Heading>Make your Study easier with Hulu books</Heading>
+        <Heading>Make Study easier with Hulu books</Heading>
         <Description>
-        Hulubook is a there for high school student that provide reference books, math equation solver, exams, chatgpt, and AI mentor.
+        Hulubook is an accadamic solution addressing the needs of high school students in ethiopia.It provides refererence books , AI bot , Math equation solver tool , and performance enhancement tools for interactyive and and expermental learning all in single app. 
         </Description>
         <CustomButtonGroup>
         <NextLink href="#apps" passHref>
@@ -34,7 +34,6 @@ export default function Hero() {
       </Contents>
       <ImageContainer>
         <Image className='w-full h-full'  alt='hulubooks user' src={hulubooksuser} width={900} height={900}/>
-         {/* <VideoPlayer />  */}
       </ImageContainer>
     </HeroWrapper>
   );
