@@ -104,11 +104,10 @@ function NavItem({ href, title, outlined }: SingleNavItem) {
   if (outlined) {
     return <CustomButton onClick={showNewsletterModal}>{title}</CustomButton>;
   }
-
   return (
     <NavItemWrapper outlined={outlined}>
       <NextLink href={href} passHref>
-        <a>{title}</a>
+        <div className='cursor-pointer'>{title}</div>
       </NextLink>
     </NavItemWrapper>
   );
