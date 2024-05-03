@@ -1,9 +1,12 @@
+import { motion } from "framer-motion";
 import { InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
 import BasicSection from 'components/BasicSection';
 import Link from 'components/Link';
 import { EnvVars } from 'env';
+import styles from "styles";
+import { staggerContainer } from "utils/motion";
 import { getAllPosts } from 'utils/postsFetcher';
 import Cta from 'views/HomePage/Cta';
 import Features from 'views/HomePage/Features';
@@ -12,6 +15,7 @@ import Hero from 'views/HomePage/Hero';
 import Partners from 'views/HomePage/Partners';
 import ScrollableBlogPosts from 'views/HomePage/ScrollableBlogPosts';
 import Testimonials from 'views/HomePage/Testimonials';
+
 
 export default function Homepage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
@@ -26,12 +30,21 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
       <HomepageWrapper>
         <WhiteBackgroundContainer>
           <Hero />
-          <Partners />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Digital Learing Envaironment" overTitle="Affordable Books">
-            <p>
-             Access to affordable books is never been easier. With Hulubooks you can upgrade the learing process to next level.Hulubooks is a toolkit that got everything to learn and appreciate practical leaing that enhance the learing process.{' '}
-            </p>
-          </BasicSection>
+          {/* <Partners /> */}
+          {/* <motion.div
+              variants={staggerContainer({ staggerChildren: 0.1, delayChildren: 0 })}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.25 }}
+              className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8 `}
+            > */}
+            <p className="font-bold  lg:text-8xl text-6xl  flex justify-center">Why Hulu books?</p>
+            <BasicSection imageUrl="/demo-illustration-1.svg" title="Digital Learing Envaironment" overTitle="Affordable Books">
+              <p>
+               Access to affordable books is never been easier. With Hulubooks you can upgrade the learing process to next level.Hulubooks is a toolkit that got everything to learn and appreciate practical leaing that enhance the learing process.{' '}
+              </p>
+            </BasicSection>
+          {/* </motion.div> */}
           <BasicSection imageUrl="/demo-illustration-2.svg" title="Easy payment with chapa payment gatway." overTitle="lorem ipsum" reversed>
             <p>
              With list of feature make your lealring exeriance to a better place.Using Hulu books payment to updated books worh the money spend{' '}
